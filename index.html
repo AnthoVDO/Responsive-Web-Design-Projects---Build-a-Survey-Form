@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Niconne&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What do you think about code ?</title>
+
+</head>
+
+<body>
+    <div id="layer">
+        <div class="outsideform1">
+            <h1 id="title">Learning to code survey form</h1>
+            <p id="description">Help me to understand which programmation language you prefer to help me understand the trends.
+            </p>
+        </div>
+
+
+        <form action="submit" id="survey-form">
+
+            <div class="inputGroup">
+                <!--name-->
+                <label for="name" id="name-label">Name</label><input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="inputGroup">
+                <!--email-->
+                <label for="email" id="email-label">Email</label><input type="email" id="email" name="email" placeholder="Your email" required></div>
+
+            <div class="inputGroup">
+                <!--age--><label for="age">Age</label><input type="number" min="0" max="12" step="1" pattern="\d*" id="age" name="age" placeholder="Your age" required></div>
+
+
+            <div class="inputGroup">
+                <!--number--><label for="number" id="number-label">Number of minimum languages that you think all coder need to know:</label><input type="number" min="0" max="12" step="1" id="number" name="number" pattern="\d*" placeholder="Number of languages" required></div>
+
+
+            <div class="inputGroup">
+                <!--time--><label for="time">Time, in hours, that you think a developper can take to be functionnal:</label>
+                <input type="text" pattern="\d*" id="time" name="time" placeholder="Time in hours to be functionnal"></div>
+
+            <div class="inputGroup" id="dropdown">
+
+                <!--website-->
+                <p>What is the best first step to learn a language ?</p>
+                <label for="website">Choose the subject</label>
+                <select name="subject" id="website" id="dropdown">
+            <option value="">--Please choose an option</option>
+            <option value="fcc">Free Code Camp cursus</option>
+            <option value="cs50">CS50's Introduction to computer science</option>
+            <option value="CodeAcademy">Code Academy</option>
+            <option value="Udemy">A lesson on Udemy</option>
+            <option value="sololearn">Sololearn</option>
+        </select>
+            </div>
+
+            <div class="inputGroup" id="radiobutton">
+                <!--favorite-->
+                <p>What are your favorite languages ?</p>
+                <label for="php">PHP<input type="radio" id="php" name="favorite" value="PHP"></label>
+                <label for="javascript">Javascript<input type="radio" id="javascript" name="favorite" value="Javascript"></label>
+                <label for="ruby">Ruby<input type="radio" id="ruby" name="favorite" value="Ruby"></label>
+                <label for="python">Python<input type="radio" id="python" name="favorite" value="Python"></label>
+                <label for="java">Java<input type="radio" id="java" name="favorite" value="Java"></label>
+                <label for="kotlin">Kotlin<input type="radio" id="kotlin" name="favorite" value="Kotlin"></label>
+                <label for="swift">Swift<input type="radio" id="swift" name="favorite" value="Swift"></label>
+                <label for="c">C<input type="radio" id="c" name="favorite" value="C"></label>
+                <label for="c++">C++<input type="radio" id="c++" name="favorite" value="C++"></label>
+                <label for="c#">C#<input type="radio" id="c#" name="favorite" value="C#"></label>
+            </div>
+
+
+
+
+            <div class="inputGroup" id="checkbox">
+                <!--use-->
+                <p>Which languages do you use ?</p>
+                <label for="php1">PHP<input type="checkbox" id="php1" name="use" value="PHP"></label>
+                <label for="javascript1">Javascript<input type="checkbox" id="javascript1" name="use" value="Javascript"></label>
+                <label for="ruby1">Ruby<input type="checkbox" id="ruby1" name="use" value="Ruby"></label>
+                <label for="python1">Python<input type="checkbox" id="python1" name="use" value="Python"></label>
+                <label for="java">Java<input type="checkbox" id="java" name="use" value="Java"></label>
+                <label for="kotlin">Kotlin<input type="checkbox" id="kotlin" name="use" value="Kotlin"></label>
+                <label for="swift">Swift<input type="checkbox" id="swift" name="use" value="Swift"></label>
+                <label for="c">C<input type="checkbox" id="c" name="use" value="C"></label>
+                <label for="c++">C++<input type="checkbox" id="c++" name="use" value="C++"></label>
+                <label for="c#">C#<input type="checkbox" id="c#" name="use" value="C#"></label>
+            </div>
+
+
+
+
+
+
+            <div class="inputGroup">
+                <!--tips-->
+                <label for="tips">Do you have tips to share to improve developpement learning ?</label><textarea id="tips" name="tips" row="5" placeholder="Write some tips here"></textarea>
+            </div>
+            <div class="inputGroup">
+                <!--submit-->
+                <label for="submit">Submit</label><input type="submit" id="submit">
+
+            </div>
+        </form>
+        <div class="outsideform2">
+            <h3>
+                Thank you for completing that survey, you rock !
+
+            </h3>
+        </div>
+
+
+
+
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+</body>
+
+</html>

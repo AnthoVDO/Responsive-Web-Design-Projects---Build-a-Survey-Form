@@ -1,0 +1,134 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.95;
+    color: #f7b315;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Niconne', cursive;
+    font-size: 3em;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.outsideform1 {
+    background-color: #444343;
+    margin: -8% -7.2%;
+    margin-bottom: 0;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    padding: 5% 2%;
+}
+
+.outsideform2 {
+    background-color: #444343;
+    margin: -8% -7.2%;
+    margin-top: 0;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    padding: 5% 2%;
+}
+
+#layer {
+    background-color: #555555;
+    opacity: 1;
+    margin: 5% 10%;
+    padding: 2% 5%;
+    border-radius: 35px;
+}
+
+#description {
+    text-align: center;
+    font-size: 1em;
+    margin: 5% 2%;
+}
+
+#survey-form {
+    text-align: left;
+}
+
+.inputGroup label {
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+#checkbox label,
+#radiobutton label,
+textarea {
+    color: #91A19A;
+}
+
+.inputGroup {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.inputGroup input {
+    box-sizing: border-box;
+    padding: 5px;
+    float: right;
+    color: #91A19A;
+}
+
+#radiobutton #checkbox {
+    display: inline-block;
+}
+
+::placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+#website {
+    color: #91A19A;
+}
+
+#tips {
+    display: inline-block;
+}
+
+#submit {
+    color: #ffffff;
+    background-color: #f7b315;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: #f8f6f5cb solid 0.2rem;
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    #submit {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+}
